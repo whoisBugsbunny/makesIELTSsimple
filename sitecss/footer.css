@@ -1,0 +1,60 @@
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+#foot {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.footer2 {
+    margin: 0;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+.contact {
+    text-align: center;
+    font-size: 48px;
+}
+
+.clear {
+    border: none;
+    outline: none;
+}
+
+.size {
+    width: 80%;
+}
+
+.textbox {
+    border-radius: 50px 0 0 50px;
+    font-size: 25px;
+    height: 50px;
+    text-indent: 20px;
+}
+
+.subbut {
+    border-radius: 0 50px 50px 0;
+    padding: 15px;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    background-color: tomato;
+    height: 50px;
+}
+
+.subbut:active {
+    background-color: white;
+    color: tomato;
+}
+
+.footer3 {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    padding: 50px;
+}

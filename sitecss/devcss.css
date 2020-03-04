@@ -1,0 +1,23 @@
+.devfull {
+    background-color: F0F0F0;
+    display: block;
+}
+
+.card {
+    margin: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.2s linear;
+    border-radius: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #5A0173;
+}
+
+.daffy {
+    /* float: left; */
+}
+
+.bugs {
+    /* float: left; */
+}

@@ -1,0 +1,327 @@
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin-top: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Cambridge Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div {
+    display: block;
+}
+
+
+/* Style the header */
+
+header {
+    text-align: left;
+    font-size: 20px;
+    height: 500px;
+    color: white;
+}
+
+.topback {
+    background-image: url("https://images.wallpaperscraft.com/image/library_books_reading_125466_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.head {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.head1 {
+    font-family: forte;
+    text-align: center;
+}
+
+.search {
+    float: right;
+}
+
+.searchbox {
+    background-color: tomato;
+}
+
+.searchbutton {
+    float: right;
+}
+
+.searchbutton:hover {
+    text-shadow: 0 0 10px 10px blue;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+
+nav {
+    float: left;
+    width: 90px;
+    height: 800px;
+    padding: 10px;
+}
+
+.navclass {
+    /* position and alignment */
+    position: fixed;
+    left: 0;
+    top: var(--ytd-masthead-height, 80px);
+    bottom: 0;
+    display: inline-block;
+    /* background-color: gray; */
+    z-index: 2030;
+}
+
+.navclass ul li {
+    color: wheat;
+    /* text-align: center; */
+}
+
+nav ul {
+    list-style-type: none;
+    color: black;
+    padding: 0;
+}
+
+.expand {
+    background-color: black;
+    border-radius: 50px;
+}
+
+.expand:active {
+    background-color: transparent;
+}
+
+.circle {
+    width: 55px;
+    height: 55px;
+    text-shadow: black;
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 50px;
+    transform-style: preserve-3d;
+    transition: all 0.2s linear;
+}
+
+.circle:hover {
+    width: 150px;
+    height: 55px;
+    position: relative;
+}
+
+.c1:hover {
+    background-color: dodgerblue;
+}
+
+.c2:hover {
+    background-color: tomato;
+}
+
+.c3:hover {
+    background-color: mediumseagreen;
+}
+
+.c4:hover {
+    background-color: grey;
+}
+
+.c5:hover {
+    background-color: slateblue;
+}
+
+.c6:hover {
+    background-color: yellow;
+}
+
+.c {
+    background-color: ;
+}
+
+.disp {
+    padding-left: 10px;
+    color: white;
+    display: none;
+    font-size: large;
+}
+
+.circle:hover .disp {
+    display: inline-block;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #27aeaf;
+    height: 300px;
+}
+
+.section {
+    margin-left: 60px;
+    padding: 10px 20px;
+}
+
+.startpage1 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+    align-content: center;
+}
+
+.container {
+    padding: 10px 20px 10px 20px;
+    margin: 0 10px 0 10px;
+    width: 100%;
+}
+
+.content {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    font-size: larger;
+    transform-style: preserve-3d;
+    transition: all 0.2s linear;
+}
+
+.content_:hover {
+    z-index: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.para {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.col h2,
+p {
+    margin-bottom: 20px;
+}
+
+.para p {
+    min-width: 300px;
+}
+
+.news {
+    background-color: tomato;
+    position: relative;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+
+.news:hover {
+    background-color: blueviolet;
+}
+
+
+/* Clear floats after the columns */
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.innerbody {
+    padding: 10px 20px;
+}
+
+.block {
+    margin: 0 10px 0 10px;
+    display: flex;
+}
+
+.column {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.text-white {
+    font-size: small;
+    color: white;
+}
+
+
+/* google style basic start */
+
+.gstyle1 {
+    background-color: transparent;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    text-indent: 20px;
+}
+
+.gstyle2 {
+    background: #fff;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    height: 39px;
+    width: 630px;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.gstyle2:hover {
+    box-shadow: 0 4px 6px 0 rgba(251, 251, 252, 0.28);
+}
+
+
+/* end of google style basic */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
