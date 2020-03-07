@@ -1,18 +1,54 @@
-.dropdown {
-    position: relative;
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.nav-search {
+    float: right;
+}
+
+.nav-search .signup-btn {
     display: inline-block;
+    margin-left: 30px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 10000;
+.lsbutton {
+    float: right;
+    font-weight: bold;
+    height: 35px;
+    color: white;
+    padding: 5px 10px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.signup-btn {
+    /* max-width: 250px; */
+    padding: 1px;
+    /* position: relative; */
+    background: linear-gradient(to right, tomato, #EB3E59);
+    padding: 3px;
+}
+
+.signup {
+    background: #241319;
+    padding: 2px;
+    float: right;
+}
+
+.sbutton {
+    padding: 15px 30px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to right, tomato, #EB3E59);
+}
+
+.sbutton:hover {
+    background-image: none;
+    color: tomato;
+    background-color: white;
+}
+
+.sbutton:active {
+    background-color: transparent;
+    border: white solid 2px;
 }

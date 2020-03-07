@@ -3,13 +3,6 @@
     box-sizing: border-box;
 }
 
-#foot {
-    background-color: black;
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
-
 .footer2 {
     margin: 0;
     padding: 50px;
@@ -44,6 +37,10 @@
     font-weight: 700;
     color: white;
     background-color: tomato;
+    height: 50px;
+}
+
+.cont-size {
     height: 50px;
 }
 

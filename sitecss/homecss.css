@@ -26,7 +26,7 @@ div {
 header {
     text-align: left;
     font-size: 20px;
-    height: 500px;
+    height: 800px;
     color: white;
 }
 
@@ -35,32 +35,31 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: top center;
 }
 
 .head {
-    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 30px 20px 90px;
     background-color: rgba(0, 0, 0, 0.445);
 }
 
 .head1 {
-    font-family: forte;
-    text-align: center;
+    /* font-family: ink Free; */
+    font-family: Mistral;
 }
 
-.search {
-    float: right;
+.banner-set {
+    padding-top: 200px;
+    padding-left: 100px;
 }
 
-.searchbox {
-    background-color: tomato;
-}
-
-.searchbutton {
-    float: right;
-}
-
-.searchbutton:hover {
-    text-shadow: 0 0 10px 10px blue;
+.head2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
 }
 
 
@@ -77,7 +76,7 @@ nav {
     /* position and alignment */
     position: fixed;
     left: 0;
-    top: var(--ytd-masthead-height, 80px);
+    top: var(--ytd-masthead-height, 100px);
     bottom: 0;
     display: inline-block;
     /* background-color: gray; */
@@ -145,7 +144,7 @@ nav ul {
 }
 
 .c {
-    background-color: royalblue;
+    background-color: white;
 }
 
 .disp {
@@ -168,8 +167,8 @@ article {
 }
 
 .section {
-    margin-left: 60px;
-    padding: 10px 20px;
+    /* margin-left: 60px; */
+    padding: 20px 0 0 100px;
 }
 
 .startpage1 {
@@ -179,8 +178,6 @@ article {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 .col {
@@ -201,9 +198,9 @@ article {
 }
 
 .container {
-    padding: 10px 20px 10px 20px;
+    padding: 0 20px;
     margin: 0 10px 0 10px;
-    width: 100%;
+    width: auto;
 }
 
 .content {
@@ -266,6 +263,10 @@ section:after {
 .block {
     margin: 0 10px 0 10px;
     display: flex;
+}
+
+.mblock {
+    display: inline-flex;
 }
 
 .column {
