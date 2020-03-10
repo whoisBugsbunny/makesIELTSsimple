@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" type="text/css" href="G:\easyIELTS project\easyIELTS project\logo\icon.css">
+    <script src="test.js"></script>
+</head>
+
+<body>
+
+
+
+    <div id="login_div" class="box">
+        <div>
+            <p>Email</p>
+            <input type="email" id="email" placeholder="enter email">
+            <p>Password</p>
+            <input type="password" id="password" placeholder="enter password" minlength="6">
+            <input class="btn" type="submit" id="login" onclick="login()" value="login">
+            <input type="submit" id="signup" onclick="signin()" value="signup">
+            <input type="submit" class="hide" id="logout" value="logout">
+        </div>
+
+    </div>
+    <div id="user_div" class="box">
+        <form style="text-align: center;">
+            <img style="width: 100px;" src="https://www.freepngimg.com/thumb/google/66726-customer-account-google-service-button-search-logo.png">
+            <h1>WELCOME</h1>
+            <p>you are logged in to the firebase authentication. testing for login and signup</p>
+            <input type="submit" onclick="signin()" id="logout" value="logout">
+        </form>
+    </div>
+
+
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA4ewdRSizGw6ZRaKpQr-NwDpbSIb5w6Xk",
+            authDomain: "makes-ielts-simple.firebaseapp.com",
+            databaseURL: "https://makes-ielts-simple.firebaseio.com",
+            projectId: "makes-ielts-simple",
+            storageBucket: "makes-ielts-simple.appspot.com",
+            messagingSenderId: "596103193609",
+            appId: "1:596103193609:web:c908b48735aeed5e2544d8",
+            measurementId: "G-R022PY7L61"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="test.js"></script>
+</body>
+
+</html>
