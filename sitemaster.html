@@ -4,42 +4,120 @@
 <head>
     <title>makes IELTS Simple</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content content_="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sitecss\homecss.css">
     <link rel="stylesheet" type="text/css" href="sitecss\imagecss.css">
-    <link rel="stylesheet" type="text/css" href="logo\icon.css">
     <link rel="stylesheet" type="text/css" href="sitecss\footer.css">
+    <link rel="stylesheet" type="text/css" href="sitecss\bodycss.css">
+    <link rel="stylesheet" type="text/css" href="sitecss\search.css">
+    <link rel="stylesheet" type="text/css" href="sitecss\expcss.css">
+    <link rel="stylesheet" type="text/css" href="logo\icon.css">
+
+
 </head>
 
-<body>
-    <img style="position: fixed; padding-top: 10px;" src="logo\logologo.png" width="100px">
-    <header class="topback headimg1">
+<body class="Poppins">
+    <img style="position: fixed; padding: 15px 10px; z-index: 10;" src="logo\logologo.png" width="90px">
+    <header class="topback headimg1 Baloo_Chettan_2">
         <div class="head">
-            <h2>
+            <h2 class="container_c" style="margin-bottom: 0;">
                 <div class="head1">
-                    <h3>make <b style="color: tomato;">IELTS</b> Simple</h3>
-                    <div style="height: 50px;">
-                        <input class="textbox clear" type="text" placeholder="Search">
-                        <input class="subbut clear" type="submit" value="Search">
+                    <div style="float: left;">
+                        makes <b class="headtext">IELTS</b> Simple
                     </div>
                 </div>
             </h2>
+            <div class="nav-search">
+                <div class="block search-set">
+                    <input class="textbox clear search-box search-text" type="text" placeholder="Search">
+                    <input class="subbut clear search-box" type="submit" value="Search">
+                    <div class="signup-btn">
+                        <button id="loginbut" class="clear lsbutton signup" onclick="window.location.href = 'loginSignin.html';">login / sign up</button>
+                        <button id="logoutbut" class="clear lsbutton signup hide" onclick="logout()">logout</button>
+                    </div>
+                    <p id="user_email"></p>
+                    <!-- <input id="logoutbut" type="submit" class="clear lsbutton signup" onclick="logPage()" id="logout" value="test this"> -->
+                </div>
+            </div>
         </div>
 
-        <nav class="navclass">
+        <nav class="navclass" id="navfloat">
             <ul>
-                <li><a href="index.html"><i class="circle c1 material-icons md-36 orange pad">home</i></a></li>
-                <li><a href="rwls.html"><i class="circle c2 material-icons md-36 blue pad">collections</i></a></li>
-                <li><a href="checkLevel.html"><i class="circle c3 material-icons md-36 tomato pad">layers</i></a></li>
-                <li><a href="dailyPost.html"><i class="circle c4 material-icons md-36 violet pad">group</i></a></li>
-                <li><a href="devloper.html"><i class="circle c5 material-icons md-36 green pad">speaker</i></a></li>
-                <li><a href="about.html"><i class="circle c6 material-icons md-36 bblue pad">help</i></a></li>
+                <!-- <li><a href="#expand"><button class="clear expand material-icons md-36 white pad">dehaze</button></a></li><br> -->
+                <li><a href="index.html"><i class="circle_c c1 material-icons md-36 orange pad">home<span class="disp">HOME</span></i></a></li>
+                <li><a href="rwls.html"><i class="circle_c c2 material-icons md-36 blue pad">collections<div class="disp">COLLECT</div></i></a></li>
+                <li><a href="checkLevel.html"><i class="circle_c c3 material-icons md-36 tomato pad">layers<div class="disp">TEST</div></i></a></li>
+                <li><a href="dailyPost.html"><i class="circle_c c4 material-icons md-36 violet pad">group<div class="disp">DAILY</div></i></a></li>
+                <li><a href="devloper.html"><i class="circle_c c5 material-icons md-36 green pad">speaker<div class="disp">DEVs</div></i></a></li>
+                <li><a href="about.html"><i class="circle_c c6 material-icons md-36 bblue pad">help<div class="disp">ABOUT US</div></i></a></li>
             </ul>
         </nav>
+
+        <!-- welcome page -->
+        <div class="container_c">
+            <div class="banner-set">
+                <span style="color: tomato; font-weight: bold;">welcome</span>
+                <div class="head2">
+                    <h1>
+                        <h1>MAKES IELTS SIMPLE</h1>
+                    </h1>
+                </div>
+                <span>makes ielts simple is very effective way to start your journey</span>
+                <div style="padding-top: 30px;">
+                    <button class="clear sbutton">read more</button>
+                </div>
+            </div>
+        </div>
+        <!-- end of welcome page -->
+
     </header>
+
     <section>
 
     </section>
 </body>
+<footer>
+    <div class="footer2">
+        <div class="row">
+            <div class="center1">
+                <h1 class="contact">contact us</h1>
+                <div class="block">
+                    <input class="textbox size clear" type="text" placeholder="your views">
+                    <input class="subbut clear" type="submit" value="send us">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="row center">
+            <div class="col" style="padding-left: 50px;">
+                <img src="logo\logologo.png" width="80px">
+            </div>
+            <ul class="col">
+                <li>11111</li>
+                <li>222222</li>
+                <li>33333333</li>
+            </ul>
+            <ul class="col">
+                <li>44444</li>
+                <li>555</li>
+                <li>6666666</li>
+                <li>77777</li>
+            </ul>
+            <ul class="col">
+                <li>8888</li>
+                <li>9999999</li>
+                <li>100000</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 </html>

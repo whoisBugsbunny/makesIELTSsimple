@@ -3,8 +3,12 @@
     box-sizing: border-box;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 .footer2 {
-    margin: 0;
+    margin: auto;
     padding: 50px;
     background-color: whitesmoke;
 }
@@ -17,17 +21,23 @@
 .clear {
     border: none;
     outline: none;
+    outline: none !important;
+    text-decoration: none !important;
 }
 
 .size {
-    width: 80%;
+    width: 100%;
 }
 
 .textbox {
-    border-radius: 50px 0 0 50px;
+    border-radius: 50px;
     font-size: 25px;
     height: 50px;
     text-indent: 20px;
+}
+
+.textbox-radius {
+    border-radius: 50px 0 0 50px;
 }
 
 .subbut {
@@ -36,7 +46,7 @@
     font-size: large;
     font-weight: 700;
     color: white;
-    background-color: tomato;
+    background: linear-gradient(to right, tomato, #EB3E59);
     height: 50px;
 }
 
@@ -44,9 +54,14 @@
     height: 50px;
 }
 
-.subbut:active {
+.subbut:hover {
+    background: none;
     background-color: white;
     color: tomato;
+}
+
+.cont-size {
+    height: 50px;
 }
 
 .footer3 {
@@ -54,4 +69,5 @@
     background-color: #222222;
     color: white;
     padding: 50px;
+    margin-left: 0;
 }

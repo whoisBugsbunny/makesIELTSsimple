@@ -5,25 +5,44 @@
     <title>makes IELTS Simple</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sitecss\homecss.css">
     <link rel="stylesheet" type="text/css" href="sitecss\imagecss.css">
     <link rel="stylesheet" type="text/css" href="sitecss\bodycss.css">
     <link rel="stylesheet" type="text/css" href="sitecss\footer.css">
+    <link rel="stylesheet" type="text/css" href="sitecss\search.css">
     <link rel="stylesheet" type="text/css" href="sitecss\expcss.css">
     <link rel="stylesheet" type="text/css" href="logo\icon.css">
 </head>
 
-<body>
+<body class="Poppins">
+    <img style="position: fixed; padding: 15px 10px; z-index: 10;" src="logo\logologo.png" width="90px">
     <header class="topback headimg2">
-        <img style="position: fixed; padding: 15px;" src="logo\logologo.png" width="100px">
         <div class="head">
-            <h2>
+            <h2 class="container_c" style="margin-bottom: 0;">
                 <div class="head1">
-                    <h3>makes <b style="color: tomato;">IELTS</b> Simple</h3>
-                    <div class="block">
-                        <input class="textbox clear" type="text" placeholder="Search">
-                        <input class="subbut clear" type="submit" value="Search">
+                    <div style="float: left;">
+                        makes <b class="headtext">IELTS</b> Simple
                     </div>
+                    <div class="nav-search">
+                        <div class="block search-set">
+                            <input class="textbox clear search-box search-text" type="text" placeholder="Search">
+                            <input class="subbut clear search-box" type="submit" value="Search">
+                            <div class="signup-btn">
+                                <button class="clear lsbutton signup">login / sign up</button>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </h2>
         </div>
@@ -39,42 +58,89 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="container">
-            <div class="row center">
+    <div class="section">
+        <div class="container_c center_">
+            <div class="row">
                 <div class="col">
-                    <h2>choose the option to work on </h2>
+                    <h2>WHICH MODULE YOU WANT TO WORK ON ?</h2>
                     <p>try full</p>
                 </div>
-                <div class="row center">
-                    <a class="learn1 content rwls" href="#reading">
-                        <div>
-                            <b><i class="material-icons md-48 pad">menu_book</i><br>Reading</b><br><br>best Reading content: comics, poetry, books etc...<br><br><br> learn more<i class="material-icons md-18">call_made</i>
-                        </div>
-                    </a>
-                    <a class="learn1 content rwls" href="#writing">
-                        <div>
-                            <b><i class="material-icons md-48 pad">edit</i><br>Writing</b><br><br>Intrusting content for Writing. get a copy.<br><br><br> learn more<i class="material-icons md-18">call_made</i>
-                        </div>
-                    </a>
-                    <a class="learn1 content rwls" href="#speaking">
-                        <div>
-                            <b><i class="material-icons md-48 pad">hdr_strong</i><br>Speaking</b><br><br>fascinating pdf for Speaking. and many more.<br><br><br> learn more<i class="material-icons md-18">call_made</i>
-                        </div>
-                    </a>
-                    <a class="learn1 content rwls" href="#listening">
-                        <div>
-                            <b><i class="material-icons md-48 pad">how_to_reg</i><br>Listening</b><br><br>HD audios for Listening, youtube also.<br><br><br> learn more<i class="material-icons md-18">call_made</i>
-                        </div>
-                    </a>
-                </div>
+            </div>
+            <div class="row_c center">
+                <a class="learn1 content_c rwls clear" href="#reading">
+                    <p class="clear">
+                        <b class="clear"><i class="clear material-icons md-48 pad">menu_book</i><br>
+                            Reading</b><br>
+                        <br>
+                        <p class="clear">
+                            best Reading content: comics, poetry, books etc...<br>
+                            <br> learn more<i class="material-icons md-18">call_made</i>
+                        </p>
+                    </p>
+                </a>
+                <a class="learn1 content_c rwls" href="#writing">
+                    <p>
+                        <b><i class="material-icons md-48 pad">edit</i><br>
+                            Writing</b><br>
+                        <br> Intrusting content_c for Writing. get a copy.<br>
+                        <br> learn more<i class="material-icons md-18">call_made</i>
+                    </p>
+                </a>
+                <a class="learn1 content_c rwls" href="#speaking">
+                    <p>
+                        <b><i class="material-icons md-48 pad">hdr_strong</i><br>
+                            Speaking</b><br>
+                        <br> fascinating pdf for Speaking. and many more.<br>
+                        <br> learn more<i class="material-icons md-18">call_made</i>
+                    </p>
+                </a>
+                <a class="learn1 content_c rwls" href="#listening">
+                    <p>
+                        <b><i class="material-icons md-48 pad">how_to_reg</i><br>
+                            Listening</b><br>
+                        <br> HD audios for Listening, you-tube also.<br>
+                        <br> learn more<i class="material-icons md-18">call_made</i>
+                    </p>
+                </a>
             </div>
         </div>
+    </div>
+    <div class="container_c">
+        <div class="row center">
+            <div class="col">
+                <h2>choose the option to work on </h2>
+                <p>try full</p>
+            </div>
+        </div>
+        <div class="row center">
+            <a class="learn1 content_c rwls clear" href="#reading">
+                <div>
+                    <b><i class="material-icons md-48 pad">menu_book</i><br>Reading</b><br><br>best Reading content: comics, poetry, books etc...<br><br><br> learn more<i class="material-icons md-18">call_made</i>
+                </div>
+            </a>
+            <a class="learn1 content_c rwls" href="#writing">
+                <div>
+                    <b><i class="material-icons md-48 pad">edit</i><br>Writing</b><br><br>Intrusting content_c for Writing. get a copy.<br><br><br> learn more<i class="material-icons md-18">call_made</i>
+                </div>
+            </a>
+            <a class="learn1 content_c rwls" href="#speaking">
+                <div>
+                    <b><i class="material-icons md-48 pad">hdr_strong</i><br>Speaking</b><br><br>fascinating pdf for Speaking. and many more.<br><br><br> learn more<i class="material-icons md-18">call_made</i>
+                </div>
+            </a>
+            <a class="learn1 content_c rwls" href="#listening">
+                <div>
+                    <b><i class="material-icons md-48 pad">how_to_reg</i><br>Listening</b><br><br>HD audios for Listening, youtube also.<br><br><br> learn more<i class="material-icons md-18">call_made</i>
+                </div>
+            </a>
+        </div>
+
+    </div>
     </section>
     <div class="container1">
-        <div class="row center">
+        <div class="row container">
             <div class="block" style="display: contents;">
-                <div class="content content1 content_b">
+                <div class="content_c content1 content_b">
                     <br><big><b>FREE PASS</b></big>
                     <p><i class="material-icons md-36">attach_money</i><b><big>0.00</big></b>
                         <ul class="content2">
@@ -84,17 +150,8 @@
                         </ul>
                     </p>
                 </div>
-                <div class="content content1 content_a">
-                    <br><big><b>MID PRIME</b></big>
-                    <p><i class="material-icons md-36">attach_money</i><b><big>2.50</big></b>
-                        <ul class="content2">
-                            <li>free pass+</li>
-                            <li>intermediate test</li>
-                            <li>pdf</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="content content1 content_c">
+
+                <div class="content_c content1 content_a">
                     <br><big><b>GO PREMIUM</b></big>
                     <p><i class="material-icons md-36">attach_money</i><b><big>5.00</big></b>
                         <ul class="content2">
@@ -112,7 +169,7 @@
     <footer>
         <div class="footer2">
             <div class="row">
-                <div class="center2">
+                <div class="center1">
                     <h1 class="contact">contact us</h1>
                     <div class="block">
                         <input class="textbox size clear" type="text" placeholder="your views">
@@ -122,22 +179,22 @@
             </div>
         </div>
         <div class="footer3">
-            <div class="row center1">
-                <div>
-                    <img src="logo\logologo.png" width="70px" height="50px">
+            <div class="row center">
+                <div class="col" style="padding-left: 50px;">
+                    <img src="logo\logologo.png" width="80px">
                 </div>
-                <ul>
+                <ul class="col">
                     <li>11111</li>
                     <li>222222</li>
                     <li>33333333</li>
                 </ul>
-                <ul>
+                <ul class="col">
                     <li>44444</li>
                     <li>555</li>
                     <li>6666666</li>
                     <li>77777</li>
                 </ul>
-                <ul>
+                <ul class="col">
                     <li>8888</li>
                     <li>9999999</li>
                     <li>100000</li>

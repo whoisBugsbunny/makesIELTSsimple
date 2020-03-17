@@ -7,34 +7,41 @@
     <title>test</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="test.css">
-    <link rel="stylesheet" type="text/css" href="G:\easyIELTS project\easyIELTS project\logo\icon.css">
-    <script src="test.js"></script>
 </head>
 
 <body>
 
-
-
-    <div id="login_div" class="box">
-        <div>
-            <p>Email</p>
-            <input type="email" id="email" placeholder="enter email">
-            <p>Password</p>
-            <input type="password" id="password" placeholder="enter password" minlength="6">
-            <input class="btn" type="submit" id="login" onclick="login()" value="login">
-            <input type="submit" id="signup" onclick="signin()" value="signup">
-            <input type="submit" class="hide" id="logout" value="logout">
-        </div>
-
-    </div>
-    <div id="user_div" class="box">
-        <form style="text-align: center;">
+    <div id="user_div" class="box hide">
+        <div style="text-align: center;">
             <img style="width: 100px;" src="https://www.freepngimg.com/thumb/google/66726-customer-account-google-service-button-search-logo.png">
             <h1>WELCOME</h1>
             <p>you are logged in to the firebase authentication. testing for login and signup</p>
-            <input type="submit" onclick="signin()" id="logout" value="logout">
-        </form>
+            <p id="user_name"></p>
+            <p id="user_email"></p>
+            <input type="submit" onclick="logout()" id="logout" value="logout">
+            <input type="submit" onclick="verification()" id="verification" value="verify">
+        </div>
     </div>
+
+    <div id="login_div" class="box">
+
+        <div>
+            <div style="text-align: center;">
+                <img style="width: 50px; height: 50px;" src="https://img.pngio.com/color-question-mark-color-clipart-question-clipart-blue-png-image-and-clipart-question-png-650_651.png">
+            </div>
+            <p>Name</p>
+            <input type="text" id="name" placeholder="enter email">
+            <p>Email *</p>
+            <input type="email" id="email" placeholder="enter email" required>
+            <p>Password *</p>
+            <input type="password" id="password" placeholder="enter password" minlength="6">
+            <input class="btn" type="submit" id="login" onclick="login()" value="login">
+            <input type="submit" id="signup" onclick="signup()" value="signup">
+
+        </div>
+
+    </div>
+
 
 
 

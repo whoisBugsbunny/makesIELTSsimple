@@ -52,14 +52,21 @@ header {
     font-family: Mistral;
 }
 
+.Poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Baloo_Chettan_2 {
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
 .banner-set {
-    padding-top: 200px;
-    padding-left: 100px;
+    padding-top: 250px;
+    padding-left: 10%;
 }
 
 .head2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
 }
 
 
@@ -76,7 +83,7 @@ nav {
     /* position and alignment */
     position: fixed;
     left: 0;
-    top: var(--ytd-masthead-height, 100px);
+    top: var(--ytd-masthead-height, 180px);
     bottom: 0;
     display: inline-block;
     /* background-color: gray; */
@@ -94,16 +101,7 @@ nav ul {
     padding: 0;
 }
 
-.expand {
-    background-color: black;
-    border-radius: 50px;
-}
-
-.expand:active {
-    background-color: transparent;
-}
-
-.circle {
+.circle_c {
     width: 55px;
     height: 55px;
     text-shadow: black;
@@ -113,7 +111,7 @@ nav ul {
     transition: all 0.2s linear;
 }
 
-.circle:hover {
+.circle_c:hover {
     width: 150px;
     height: 55px;
     position: relative;
@@ -148,13 +146,14 @@ nav ul {
 }
 
 .disp {
+    padding-bottom: 10px;
     padding-left: 10px;
     color: white;
     display: none;
     font-size: large;
 }
 
-.circle:hover .disp {
+.circle_c:hover .disp {
     display: inline-block;
 }
 
@@ -175,35 +174,37 @@ article {
     text-align: center;
 }
 
-.row {
+.row_c {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.col {
+.col_c {
     position: relative;
     text-align: center;
-    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.col {
+.col-center {
+    flex: 0 0 100%;
     max-width: 100%;
+    text-align: center;
 }
 
-.center {
+.center_ {
     text-align: center;
     align-content: center;
 }
 
-.container {
-    padding: 0 20px;
+.container_c {
+    padding: 0 30px;
     margin: 0 10px 0 10px;
     width: auto;
 }
 
-.content {
+.content_c {
     margin: 10px;
     position: relative;
     text-align: center;
@@ -219,11 +220,6 @@ article {
 .content_:hover {
     z-index: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-}
-
-.para {
-    margin-left: -10px;
-    margin-right: 10px;
 }
 
 .col h2,
@@ -247,6 +243,18 @@ p {
     background-color: blueviolet;
 }
 
+.padding_c {
+    padding: 30px;
+}
+
+.t_padding_c {
+    padding: 50px 10px;
+}
+
+.s_padding_c {
+    padding: 10px 50px;
+}
+
 
 /* Clear floats after the columns */
 
@@ -254,10 +262,6 @@ section:after {
     content: "";
     display: table;
     clear: both;
-}
-
-.innerbody {
-    padding: 10px 20px;
 }
 
 .block {
@@ -279,42 +283,6 @@ section:after {
     font-size: small;
     color: white;
 }
-
-
-/* google style basic start */
-
-.gstyle1 {
-    background-color: transparent;
-    color: rgba(0, 0, 0, .87);
-    word-wrap: break-word;
-    outline: none;
-    display: flex;
-    flex: 100%;
-    -webkit-tap-highlight-color: transparent;
-    margin-top: -37px;
-    text-indent: 20px;
-}
-
-.gstyle2 {
-    background: #fff;
-    display: flex;
-    border-radius: 8px;
-    border: 1px solid #dfe1e5;
-    box-shadow: none;
-    height: 39px;
-    width: 630px;
-    border-radius: 24px;
-    z-index: 3;
-    height: 44px;
-    margin: 0 auto;
-}
-
-.gstyle2:hover {
-    box-shadow: 0 4px 6px 0 rgba(251, 251, 252, 0.28);
-}
-
-
-/* end of google style basic */
 
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */

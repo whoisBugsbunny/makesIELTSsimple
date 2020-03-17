@@ -41,12 +41,20 @@
     font-size: 48px;
 }
 
-.material-icons.md-cus {
-    font-size: 55px;
+.material-icons.md-64 {
+    font-size: 64px;
 }
 
 .material-icons.md-96 {
     font-size: 96px;
+}
+
+.material-icons.md-120 {
+    font-size: 120px;
+}
+
+.material-icons.md-150 {
+    font-size: 150px;
 }
 
 
@@ -101,6 +109,25 @@
 
 .material-icons.bblue {
     color: slateblue;
+}
+
+.material-icons.pdfred {
+    color: #EC4135;
+}
+
+.material-icons.tompink {
+    background: linear-gradient(to left, tomato, #EB3E59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* close */
+
+.material-icons.close:hover {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 

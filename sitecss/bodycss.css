@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+.topics {
+    padding: 80px 0 80px 0;
+}
+
+.container0 {
+    padding: 50px 150px 50px 150px;
+}
+
 .container1 {
     padding: 50px 100px 50px 100px;
     height: fit-content;
@@ -29,19 +37,13 @@
     text-align: left;
 }
 
-.content_a:hover {
-    background-color: tomato;
-    color: #FFFF33;
-    border: 8px double #FFFF33;
-}
-
 .content_b:hover {
     background-color: #FFFF33;
     color: black;
     border: 5px double black;
 }
 
-.content_c:hover {
+.content_a:hover {
     background-color: purple;
     color: whitesmoke;
     border: 7px double whitesmoke;
@@ -56,4 +58,12 @@
 .center2 {
     margin: auto;
     width: 50%;
+}
+
+.b_head-size {
+    font-size: xx-large;
+}
+
+.b_font-size {
+    font-size: large;
 }

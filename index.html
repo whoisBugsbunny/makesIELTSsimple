@@ -5,6 +5,13 @@
     <title>makes IELTS Simple</title>
     <meta charset="utf-8">
     <meta name="viewport" content content_="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sitecss\homecss.css">
     <link rel="stylesheet" type="text/css" href="sitecss\imagecss.css">
     <link rel="stylesheet" type="text/css" href="sitecss\footer.css">
@@ -12,62 +19,119 @@
     <link rel="stylesheet" type="text/css" href="sitecss\search.css">
     <link rel="stylesheet" type="text/css" href="sitecss\expcss.css">
     <link rel="stylesheet" type="text/css" href="logo\icon.css">
-    <script src="siteScript\footer.js"></script>
+
+
 </head>
 
-<body>
+<body class="Poppins">
     <img style="position: fixed; padding: 15px 10px; z-index: 10;" src="logo\logologo.png" width="90px">
-    <header class="topback headimg1">
+    <header class="topback headimg1 Baloo_Chettan_2">
         <div class="head">
-            <h2 class="container" style="margin-bottom: 0;">
+            <h2 class="container_c" style="margin-bottom: 0;">
                 <div class="head1">
                     <div style="float: left;">
-                        makes <b style="color: tomato;">IELTS</b> Simple
+                        makes <b class="headtext">IELTS</b> Simple
                     </div>
-                    <div class="nav-search">
-                        <div class="block search-set">
-                            <input class="textbox clear search-box search-text" type="text" placeholder="Search">
-                            <input class="subbut clear search-box" type="submit" value="Search">
-                            <div class="signup-btn">
-                                <button class="clear lsbutton signup">login / sign up</button>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
             </h2>
 
+            <!-- outer search -->
+
+            <!-- end of outer search -->
+
+            <div class="nav-search">
+                <div class="block search-set">
+                    <input class="textbox textbox-radius clear search-box search-text" type="text" placeholder="Search">
+                    <button class="subbut clear search-box"><i class="material-icons md-24" style="padding: 3px 15px;">search</i></button>
+                    <div class="signup-btn">
+                        <button id="loginbut" class="clear lsbutton signup" onclick="window.location.href = 'loginSignin.html';">login / sign up</button>
+                        <!-- <button id="logoutbut" class="clear lsbutton signup hide" onclick="logout()">logout</button> -->
+                    </div>
+                    <p id="user_email"></p>
+                    <!-- <input id="logoutbut" type="submit" class="clear lsbutton signup" onclick="logPage()" id="logout" value="test this"> -->
+                </div>
+            </div>
         </div>
-        <div class="banner-set">
-            <p>
-                <span style="color: tomato;">welcome</span>
+
+        <nav class="navclass" id="navfloat">
+            <ul>
+                <!-- <li><a href="#expand"><button class="clear expand material-icons md-36 white pad">dehaze</button></a></li><br> -->
+                <li><a href="index.html"><i class="circle_c c1 material-icons md-36 orange pad">home<span class="disp">HOME</span></i></a></li>
+                <li><a href="rwls.html"><i class="circle_c c2 material-icons md-36 blue pad">collections<div class="disp">COLLECT</div></i></a></li>
+                <li><a href="checkLevel.html"><i class="circle_c c3 material-icons md-36 tomato pad">layers<div class="disp">TEST</div></i></a></li>
+                <li><a href="dailyPost.html"><i class="circle_c c4 material-icons md-36 violet pad">group<div class="disp">DAILY</div></i></a></li>
+                <li><a href="devloper.html"><i class="circle_c c5 material-icons md-36 green pad">speaker<div class="disp">DEVs</div></i></a></li>
+                <li><a href="about.html"><i class="circle_c c6 material-icons md-36 bblue pad">help<div class="disp">ABOUT US</div></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- welcome page -->
+        <div class="container_c">
+            <div class="banner-set">
+                <span style="color: tomato; font-weight: bold; border-bottom: 2px solid white;">welcome</span>
                 <div class="head2">
-                    <h1>MAKES IELTS SIMPLE</h1>
+                    <h1>
+                        <h1>MAKES IELTS SIMPLE</h1>
+                    </h1>
                 </div>
                 <span>makes ielts simple is very effective way to start your journey</span>
                 <div style="padding-top: 30px;">
                     <button class="clear sbutton">read more</button>
                 </div>
-            </p>
+            </div>
         </div>
-        <nav class="navclass" id="navfloat">
-            <ul>
-                <!-- <li><a href="#expand"><button class="clear expand material-icons md-36 white pad">dehaze</button></a></li><br> -->
-                <li><a href="index.html"><i class="circle c1 material-icons md-36 orange pad">home<span class="disp">HOME</span></i></a></li>
-                <li><a href="rwls.html"><i class="circle c2 material-icons md-36 blue pad">collections<div class="disp">COLLECT</div></i></a></li>
-                <li><a href="checkLevel.html"><i class="circle c3 material-icons md-36 tomato pad">layers<div class="disp">TEST</div></i></a></li>
-                <li><a href="dailyPost.html"><i class="circle c4 material-icons md-36 violet pad">group<div class="disp">DAILY</div></i></a></li>
-                <li><a href="devloper.html"><i class="circle c5 material-icons md-36 green pad">speaker<div class="disp">DEVs</div></i></a></li>
-                <li><a href="about.html"><i class="circle c6 material-icons md-36 bblue pad">help<div class="disp">ABOUT US</div></i></a></li>
-            </ul>
-        </nav>
+        <!-- end of welcome page -->
+
     </header>
-    <section class="section">
+
+    <div class="section">
+        <div class="container_c center_">
+            <div class="row">
+                <div class="col">
+                    <h2>WHICH MODULE YOU WANT TO WORK ON ?</h2>
+                    <p>try full</p>
+                </div>
+            </div>
+            <div class="row_c center">
+                <a class="learn1 content_c rwls clear" href="reading.html">
+                    <p>
+                        <b class="clear"><i class="clear material-icons md-48 pad">menu_book</i><br>
+                            Reading</b><br>
+                        <br> best Reading content: comics, poetry, books etc...<br>
+                        <br> learn more<i class="material-icons md-18">call_made</i>
+
+                    </p>
+                </a>
+                <a class="learn1 content_c rwls clear" href="writing.html">
+                    <p>
+                        <b><i class="material-icons md-48 pad">edit</i><br>
+                            Writing</b><br>
+                        <br> Intrusting content_c for Writing. get a copy.<br>
+                        <br> learn more<i class="material-icons md-18">call_made</i>
+                    </p>
+                </a>
+                <a class="learn1 content_c rwls clear" href="speaking.html">
+                    <p>
+                        <b><i class="material-icons md-48 pad">record_voice_over</i><br>
+                            Speaking</b><br>
+                        <br> fascinating pdf for Speaking. and many more.<br>
+                        <br> learn more<i class="material-icons md-18">call_made</i>
+                    </p>
+                </a>
+                <a class="learn1 content_c rwls clear" href="listening.html">
+                    <p>
+                        <b><i class="material-icons md-48 pad">hearing</i><br>
+                            Listening</b><br>
+                        <br> HD audios for Listening, you-tube also.<br>
+                        <br> learn more<i class="material-icons md-18">call_made</i>
+                    </p>
+                </a>
+            </div>
+        </div>
         <div class="startpage1">
             <h2>bla bla bla choos</h2>
             kar lo karlo hover to karlo</div>
-        <div class="container">
+        <div class="container_c">
             <div class="row">
                 <div class="col">
                     <h2>bla bla bla choose karne ko hai hell lello oo </h2>
@@ -75,75 +139,305 @@
                 </div>
             </div>
             <div class="row center">
-                <div class="content content_">1<br>
-                    <p>test 1</p>
+                <div class="row">
+                    <div class="container_c">
+                        <div class="col content_c content_">
+                            <b><i class="material-icons md-48 pad">menu_book</i><br>Reading</b>
+                            <br><br>best Reading content: comics, poetry, books etc...<br><br>
+                            <br> learn more<i class="material-icons md-18">call_made</i>
+                        </div>
+
+                    </div>
+                    <div class="col content_c content_">2<br>
+                        <p>test 2</p>
+                    </div>
+                    <div class="col content_c content_">3<br>
+                        <p>test 3</p>
+                    </div>
+                    <div class="col content_c content_">4<br>
+                        <p>test 4</p>
+                    </div>
                 </div>
-                <div class="content content_">2<br>
-                    <p>test 2</p>
-                </div>
-                <div class="content content_">3<br>
-                    <p>test 3</p>
-                </div>
-                <div class="content content_">4<br>
-                    <p>test 4</p>
-                </div>
-                <div class="content content_">5<br>
-                    <p></p>
-                </div>
-                <div class="content content_">6<br>
-                    <p></p>
-                </div>
-                <div class="content content_">7<br>
-                    <p></p>
-                </div>
-                <div class="content content_">8<br>
-                    <p></p>
+                <div class="row">
+                    <div class="col content_c content_">5<br>
+                        <p></p>
+                    </div>
+                    <div class="col content_c content_">6<br>
+                        <p></p>
+                    </div>
+                    <div class="col content_c content_">7<br>
+                        <p></p>
+                    </div>
+                    <div class="col content_c content_">8<br>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        <div class="innerbody">
-            <h2>paragraphs</h2>
-            <div class="block">
-                <div class="para">
-
-                    <img src="siteImages/back1.jpeg" height="400px" alt="backimg">
-                </div>
-            </div>
-            <article>
-                <h1>England's capital</h1>
-            </article>
-        </div>
-    </section>
-
     </div>
+
+    <div class="container center_">
+        <div class="row">
+            <div class="col">
+                <h2>Getting Started</h2>
+                <p>
+                    E HAVE MORE SUCCESS STORIES THAN ANY OTHER IELTS COURSE IN THE WO
+                </p>
+                <div class="container embed-responsive-item">
+                    <div class="col content_c content_">5<br>
+                        <p></p>
+                    </div>
+                </div>
+                <p>
+
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="col">
+                <h2>Get more libraries</h2>
+                <p>
+                    E HAVE MORE SUCCESS STORIES THAN ANY OTHER IELTS COURSE IN THE WO
+                </p>
+                <div class="col content_c content_">5<br>
+                    <p></p>
+                </div>
+                <p>
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                </p>
+            </div>
+
+            <div class="col">
+                <h2>Web Hosting</h2>
+                <p>
+                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                </p>
+
+                <p>
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="col">
+                <h2>Web Hosting</h2>
+                <p>
+                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                </p>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qN3OueBm9F4" allowfullscreen></iframe>
+
+                <p>
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col card learn1 content_c rwls clear">
+                <b><i class="material-icons md-48 pad">menu_book</i></b>
+
+                <div class="card-body">
+                    <h4 class="card-title"><b>Reading</b></h4>
+                    <p class="card-text">best Reading content: comics, poetry, books etc...<br> learn more<i class="material-icons md-18">call_made</i></p>
+                </div>
+            </div>
+            <div class="col card learn1 content_c rwls clear">
+                <b><i class="material-icons md-48 pad">menu_book</i></b>
+
+                <div class="card-body">
+                    <h4 class="card-title"><b>Reading</b></h4>
+                    <p class="card-text">best Reading content: comics, poetry, books etc...<br> learn more<i class="material-icons md-18">call_made</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="topics" style="text-align: center;">
+        <div class="container0">
+            <div class="row">
+                <div class="col col-center">
+                    <h1>how we can help ?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="">
+                        aaaaaaaa
+                    </div>
+                </div>
+                <div class="col">
+                    vvvvvvvvvvv
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="jumbotron center_">
+        <div class="container">
+            <h1>IELTS Preparation with makes IELTS simple</h1>
+            <br />
+            <br />
+            <p class="lead">
+                makesIELTSsimple.com began as a humble class blog; a way of sharing my lessons with students who couldn’t make it to class. It has quickly grown to become a way of sharing my knowledge with students from every country in the world.
+                <p class="lead">
+                    If you think it’s just about IELTS, you are wrong. It’s about improving people’s prospects. I receive emails on a daily basis from people telling me how their lives have changed for the better and how excited they are that they can finally move to the
+                    country of their dreams.
+                </p>
+                <p class="lead">
+                    If you are a professional hoping to get the right IELTS score to land that dream job, you are in the right place. Within these pages, you will find all the information you need to succeed.
+                </p>
+                <p class="lead">
+                    Our main pages link up with the main skills tested, namely Writing Task 1, Writing Task 2, Speaking, Listening and Reading. We also know how important good Vocabulary is, so we have a main page for it too. If you are just starting, or a little bit confused
+                    about IELTS, our IELTS Preparation page is the perfect place to start.
+                </p>
+                <p class="lead">
+                    For those of you who want extra help, we provide our premium VIP course.
+                </p>
+                <p class="lead">
+                    I hope that you enjoy using IELTS Advantage. If you like what you see, please feel free to share the site with your friends or write something nice in the comments. I am always working hard to improve the site and I hope that I can bring you even more
+                    great stuff in the future.
+                </p>
+                <p class="lead">
+                    Chris Pell Founder of IELTS Advantage
+                </p>
+                <p><a href="http://www.apple.com" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="row" style="margin: auto;">
+        <div class="container center_">
+            <h1>WE HAVE MORE SUCCESS STORIES THAN ANY OTHER IELTS COURSE IN THE WORLD</h1>
+            <h1>Find out why from our success stories below.</h1>
+        </div>
+        <br />
+        <br />
+        <div class="container center_">
+            <div class="row">
+                <div class="col">
+                    <h2>Getting Started</h2>
+                    <p>
+                        E HAVE MORE SUCCESS STORIES THAN ANY OTHER IELTS COURSE IN THE WO
+                    </p>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qN3OueBm9F4" allowfullscreen></iframe>
+
+                    <p>
+
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <h2>Get more libraries</h2>
+                    <p>
+                        E HAVE MORE SUCCESS STORIES THAN ANY OTHER IELTS COURSE IN THE WO
+                    </p>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qN3OueBm9F4" allowfullscreen></iframe>
+
+                    <p>
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <h2>Web Hosting</h2>
+                <p>
+                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                </p>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qN3OueBm9F4" allowfullscreen></iframe>
+
+                <p>
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="row center">
+            <div class="block" style="display: contents;">
+                <div class="content_c content1 content_b">
+                    <br><big><b>FREE PASS</b></big>
+                    <p><i class="material-icons md-36">attach_money</i><b><big>0.00</big></b>
+                        <ul class="content2">
+                            <li>static data</li>
+                            <li>beginner tests</li>
+                            <li>daily words</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="content_c content1 content_a">
+                    <br><big><b>GO PREMIUM</b></big>
+                    <p><i class="material-icons md-36">attach_money</i><b><big>1.00</big></b>
+                        <ul class="content2">
+                            <li>pdf</li>
+                            <li>advance test</li>
+                            <li>suggestion</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <footer>
-    <div class="footer3">
-        <div class="row center1">
-            <div>
-                <img src="logo\logologo.png" width="70px" height="50px">
+    <div class="footer2">
+        <div id="contactUs" class="container">
+            <h1 class="contact">contact us</h1>
+            <div class="row t_padding_c">
+                <div class="col-4"><input id="views_name" class="textbox size clear" type="text" placeholder="name" required></div>
+                <div class="col"><input id="views_email" class="textbox size clear" type="email" placeholder="email" required></div>
             </div>
-            <ul>
-                <li>11111</li>
-                <li>222222</li>
-                <li>33333333</li>
-            </ul>
-            <ul>
-                <li>44444</li>
-                <li>555</li>
-                <li>6666666</li>
-                <li>77777</li>
-            </ul>
-            <ul>
-                <li>8888</li>
-                <li>9999999</li>
-                <li>100000</li>
-            </ul>
+            <div class="row">
+                <div class="col center1">
+                    <div class="block">
+                        <input id="your_views" class="textbox textbox-radius size clear" type="text" placeholder="your views" minlength="5">
+                        <input id="submit" class="subbut clear" type="submit" value="send us">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="footer3">
+        <div class="row center">
+            <div class="col" style="padding-left: 50px;">
+                <img src="logo\logologo.png" width="80px">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row s_padding_c">
+                <ul class="col">
+                    <li>11111</li>
+                    <li>222222</li>
+                    <li>33333333</li>
+                </ul>
+                <ul class="col">
+                    <li>44444</li>
+                    <li>555</li>
+                    <li>6666666</li>
+                    <li>77777</li>
+                </ul>
+                <ul class="col">
+                    <li>8888</li>
+                    <li>9999999</li>
+                    <li>100000</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
 
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+
+
+    <script src="loginSign.js"></script>
+
+    <script src="contact.js"></script>
 </footer>
+
 
 
 </html>
